@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- importar css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- importar js -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/index.js"></script> 
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h2>ATM</h2>
+        </div>
+    </header>
+    <main class="cajero-main">
+        <div class="primer-mensaje" >
+            <h1 id="mensaje">Ingresa tu tarjeta</h1>
+        </div>
+        <div class="cajero">
+            <img  class="cajero-img" src="./assets/img/cajero.webp" alt="">
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assets/img/Blue-Credit-Card-PNG.png" alt="">
+        </div>
+        <div class="init">
+            <button onclick="iniciar()" class="btn-init">Iniciar</button>
+        </div>
+        <!-- opciones lado izquierdo -->
+        <div class="opciones">
+            <div class="opciones-izq">
+                <button onclick="exit()" class="btn-opciones">Salir</button>
+            </div>
+            <!-- opciones lado derecho -->
+            <div class="opciones-der">
+                <button onclick="consultar_saldo()" class="btn-opciones">Consultar</button>
+                <button onclick="retirar()" class="btn-opciones">Retirar</button>
+                <button onclick="depositar()" class="btn-opciones">Depositar</button>
+            </div>
+            <!-- opcion regresar -->
+            <div class="opciones-regresar">
+                <button onclick="regresar()" class="btn-opciones">Regresar</button>
+            </div>
+        </div>
+        <!-- teclado numerico -->
+        
+        <div class="teclado">
+            <input type="number" id="cantidad" class="input" placeholder="0" disabled>
+            <div class="teclado-izq">
+                <button onclick="teclado(1)" class="btn-teclado">1</button>
+                <button onclick="teclado(2)" class="btn-teclado">2</button>
+                <button onclick="teclado(3)" class="btn-teclado">3</button>
+            </div>
+            <div class="teclado-der">
+                <button onclick="teclado(4)" class="btn-teclado">4</button>
+                <button onclick="teclado(5)" class="btn-teclado">5</button>
+                <button onclick="teclado(6)" class="btn-teclado">6</button>
+            </div>
+            <div class="teclado-izq">
+                <button onclick="teclado(7)" class="btn-teclado">7</button>
+                <button onclick="teclado(8)" class="btn-teclado">8</button>
+                <button onclick="teclado(9)" class="btn-teclado">9</button>
+            </div>
+            <div class="teclado-der">
+                <button onclick="teclado(0)" class="btn-teclado">0</button>
+                <button onclick="borrar()" class="btn-teclado">Borrar</button>
+                <button onclick="aceptar()" class="btn-teclado">Aceptar</button>
+            </div>
+    </main>
+    <main class="gracias">
+        <div class="graciash1">
+            <h1>Gracias por usar nuestros dispositivos</h1>
+            <br> <br>
+            <h2>Hasta luego</h2>
+        </div>
+    </main>
+</body>
+</html>

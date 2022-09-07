@@ -1,0 +1,115 @@
+header{
+    text-align: center;
+}
+.container{
+    width: 15%;
+    margin: auto;
+    height: 100%;
+    background-color: rgb(7, 9, 146);
+    color: aliceblue;
+}
+.cajero{
+   display: flex;
+    flex-direction: column;
+}
+.cajero-img{
+    width: 40%;
+    margin: auto;
+}
+.card{
+    text-align: end;
+    margin-right: 35%;
+}
+.card-img{
+    max-width: 25%;
+   /* cambiar a horizontal la imagen */
+   -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+}
+.init{
+text-align: center;
+margin-right: 10vh;
+}
+.primer-mensaje{
+    text-align: center;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: grey;
+    border: 2px solid black;
+}
+/* opciones lado izquierdo */
+.opciones-izq{
+    /* alinar arriba */
+    position: absolute;
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+.opciones-izq button{
+ 
+   margin-bottom: 20px;
+}
+.opciones-der{
+    /* alinar arriba */
+    position: absolute;
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+   /* alinear a la derecha*/
+    margin-left: 70%;
+}
+.opciones-der button{
+ 
+   margin-bottom: 25px;
+}
+.opciones-regresar{
+    display: none;
+    /* alinar arriba */
+    position: absolute;
+    top: 25vh;
+   /*  display: flex; */
+    flex-direction: column;
+   /* alinear a la derecha*/
+    margin-left: 70%;
+}
+.opciones-regresar button{
+ 
+   margin-bottom: 25px;
+}
+.opciones{
+     display: none; 
+}
+.teclado{
+    /* alinear al centro */
+    margin-left: 35%;
+    margin-top: 6vh;
+    display: none;
+
+}
+.teclado input{
+   background-color: rgb(7, 9, 146);
+   border: 2px solid black;
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+/* color place holder */
+::-webkit-input-placeholder {
+    color:aliceblue;
+}
+
+.gracias{
+    margin-top: 20vh;
+    height: 50vh;
+    background-color: rgb(7, 9, 146);
+    color: aliceblue;
+   display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
